@@ -1,11 +1,11 @@
 {
-  "version": "1.2.5",
-  "pub_date": "2026-11-02T11:43:12Z",
-  "notes": "拂云客电商AI v1.2.5",
+  "version": "1.2.6",
+  "pub_date": "2026-11-02T19:05:01Z",
+  "notes": "# 拂云客电商AI v1.2.6\n\n本版为累积优化版，包含此前全部改进。\n\n## 一、新增：设置 → 基础设置 → 存储位置\n\n- **知识库存储目录可自定义**：不再固定放在系统盘用户目录，可指定到任意磁盘。切换即时生效，无需重启。\n- **工作台应用数据目录可自定义**：会话、数据库、日志、运行时数据整体迁移到指定磁盘，避免 C 盘被逐步撑爆。\n- **两种切换方式**：仅切换（保留旧数据，手动清理）或复制迁移（旧数据原样保留，绝不自动删除）。\n- **迁移安全性**：数据库采用在线备份方式拷贝，程序运行中也能安全复制；知识库索引路径自动改写。\n- **路径校验**：必须是绝对路径；写入前做真实写权限探测；磁盘剩余空间不足会拒绝；父子目录互相包含直接拒绝，防止自我覆盖。\n\n## 二、语音：豆包（火山引擎）语音通道\n\n- 内置语音后台默认参数：TTS 音色、资源 ID、ASR 资源 ID、通道开关已配好。\n- **API Key 由使用者在界面自行填写，密钥不进入模型上下文，不落日志。**\n- 语音合成 / 语音识别双通道独立开关。\n\n## 三、联网搜索\n\n- 接入 DeepSeek 原生联网搜索，自动复用已配置的对话 Key，无需单独再填搜索密钥。\n\n## 四、模型与知识库\n\n- 修复对话模型 Key 配置后仍报错的问题。\n- 修复知识库向量化在云服务商下的异常，嵌入模型注册表容错增强。\n\n## 五、品牌清理\n\n- 智能体人格、资产中心、技能说明、插件注册表内残留旧品牌标识全部清理，界面与提示词统一为「拂云客」。\n- 数据目录、二进制名、环境变量前缀全量对齐自有品牌。\n- 上游开源许可与出处声明完整保留。\n\n## 六、架构\n\n- 所有改动沿用原有分层（前端 → 网关路由 → harness 设置存储），新增模块以独立路由与独立设置键接入，不侵入既有链路。",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRME83UzRIS1k4b3R4U3NqbTZaRGU3WGJSdXRWWDQ5L0JLY2hvUlI4VExpd2J1SStUMmRaeHFkSmpVTWZiZU5wckJaQy9iVktiWUJ5OUd1K3Vod3I1RVEySGI1Vlg3REEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNjE5NDQ5CWZpbGU65ouC5LqR5a6i55S15ZWGQUlfMS4yLjVfeDY0LXNldHVwLm5zaXMuemlwCk9LTk1CNDBYSVZRQndIMktRaFFNdGMvZ0h6VFdHUmIxUnVkdEhxaUc5bnplamFEZHkyRklubGN0U2JkQ2dTdHRuaXIwbTFTM1lBbE1vdWRrNnRWMkNnPT0K",
-      "url": "https://ghfast.top/https://github.com/yurundong1/fuyunke-dianshang/releases/download/v1.2.5/fuyunke-dianshang-1.2.5-x64-setup.nsis.zip"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRME83UzRIS1k4b2x4b2hxUmZwT2JtY2xENDB6cm5GWFNuTm9HdDhObGxaNTdQQ29odVNOT1IzcVhmdjREdDRMUnlHcW0rMU1UaHA1eFNIck9jMUxPdVAvY2tiODFVdlFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNjQ2MDM0CWZpbGU65ouC5LqR5a6i55S15ZWGQUlfMS4yLjZfeDY0LXNldHVwLm5zaXMuemlwCndqbEljYmN1ckxwT083aVR0WEhldDkzek5JVkdDRWw0bDdIK1VvWmRQZ3c0a040aDBSSWk3MkY3MnA2eU0vUjUrenhoakVzMlUwdXlkZWRPQzQ2TkR3PT0K",
+      "url": "https://ghfast.top/https://github.com/yurundong1/fuyunke-dianshang/releases/download/v1.2.6/fuyunke-dianshang-1.2.6_x64-setup.nsis.zip"
     }
   }
 }
