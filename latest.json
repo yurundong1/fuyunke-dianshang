@@ -1,11 +1,11 @@
 {
   "version": "1.2.5",
-  "pub_date": "2026-11-02T10:38:40Z",
+  "pub_date": "2026-11-02T10:41:23Z",
   "notes": "拂云客电商AI v1.2.5",
   "platforms": {
     "windows-x86_64": {
       "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRME83UzRIS1k4b29HOEZYczJxREpjbGQwNVVGTHJUQVlNL3dhVXFOZjFvY2RNZWRYVGN5K2RMb21Id245UXFwaXZRVHVXY3QwbFpRaGVSdEtPYzNrUi8vU3ZtUDhuZVFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNjE1NjcwCWZpbGU65ouC5LqR5a6i55S15ZWGQUlfMS4yLjVfeDY0LXNldHVwLm5zaXMuemlwCndZalhZOCtWV001RktoWVJZTmtSZ1g1WDRsajZzNHU3eGViOUg4b1UxWWNlcU1Hc2YycGdKUFlaTU00MytDSlZvSnF1U3pYSzJza3VUclhMeFlBVkFRPT0K",
-      "url": "https://github.com/yurundong1/fuyunke-dianshang/releases/download/v1.2.5/%E6%8B%82%E4%BA%91%E5%AE%A2%E7%94%B5%E5%95%86AI_1.2.5_x64-setup.nsis.zip"
+      "url": "https://github.com/yurundong1/fuyunke-dianshang/releases/download/v1.2.5/fuyunke-dianshang-1.2.5-x64-setup.nsis.zip"
     }
   }
 }
